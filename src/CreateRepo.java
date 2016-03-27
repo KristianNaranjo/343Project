@@ -18,8 +18,12 @@ public class CreateRepo {
 			File target = new File(user[3]);
 			if (cmd.equals("create") && repo.equals("repo")){
 				if(src.exists() && target.exists()){
+					if (!src.equals(target)){
 					initialize(user[2], user[3]);
 					System.out.print("repo created");
+					}
+					else
+						System.out.println("The source folder cannot be the target folder.");
 				}
 				else System.out.print("Either source folder or target folder does not exist.");
 			}
@@ -27,11 +31,12 @@ public class CreateRepo {
 		if(!input.equals("exit"))
 			main(args);
 		in.close();
+		out.close();
 	}
 	
 	static void initialize(String src, String target){
-		String repo = "repo343";
-		// create repo directory in target directory
+				String repo = "repo343";
+				// create repo directory in target directory
 				File theDir = new File(target+"/"+repo);
 				createDir(theDir);
 				
@@ -50,12 +55,15 @@ public class CreateRepo {
 				File srcDir = new File(src);
 				
 				// create tree directory in repo
-				File dupTree = new File(target+"/"+repo+"/"+src);
+				File dupTree = new File(target+"/"+repo+"/"+srcDir.getName());
 				createDir(dupTree);
 				
 				// duplicate tree inside repo
 				String repoTreePath = target+"/"+repo+"/"+src;
 				copyTree(srcDir,repoTreePath);
+				out.println();
+				out.println("Previous Project tree: None");
+				out.flush();
 	}
 
 	static void copyTree(File folder,String path){
@@ -95,10 +103,17 @@ public class CreateRepo {
 	    }
 	}
 	static int getCheckSum(File file){
-		// use size of file to get AID
-		long bytes = file.length();
-		// get number between 0 and 255
-		int artID = (int) (bytes % 256);
+		// get AID based on file name
+		String fName = file.getName();
+		int artID = 0;
+		// get checksum of file name by getting its ascii value
+		for(int i = 0; i < fName.length(); i++){
+			if (fName.charAt(i) == '.')
+				break;
+			artID += (int)fName.charAt(i);
+		}
+		// make sure AID is between 0 and 255
+		artID %= 256;
 		return artID;
 	}
 	
