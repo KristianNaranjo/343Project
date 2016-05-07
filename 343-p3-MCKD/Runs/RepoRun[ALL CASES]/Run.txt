@@ -1,0 +1,29 @@
+THIS RUN SHOWS ALL CASES FOR A MERGE.
+- a non-conflict where one file doesn't exist
+- a non-conflict where the artifact IDs are the same
+- a conflict where two artifact IDs differ
+
+PROGRAM I/O:
+
+r343> create repo ../FRED/mypt2 ./
+repo created
+r343> check in ../FRED/mypt2 ./repo343
+check-in successful
+r343> check out ./repo343 ../JACK
+1. Fri May 06 21-31-33 PDT 2016 Location- FRED.txt
+2. Fri May 06 21-31-46 PDT 2016 Location- FRED.txt
+Enter the number associated with your desired manifest file.
+2
+check-out successful
+r343> check in ../JACK/mypt2 ./repo343
+check-in successful
+r343> merge ./repo343 ../JACK
+Choose a source manifest file to be merged.
+1. Fri May 06 21-31-33 PDT 2016 Location- FRED.txt
+2. Fri May 06 21-31-46 PDT 2016 Location- FRED.txt
+Enter the number associated with your desired manifest file.
+2
+Merge successful
+
+r343> check in ../JACK/mypt2 ./repo343
+check-in successful

@@ -1,8 +1,0 @@
-.//repo343/mypt2/goodbye.txt/233.txt
-
-.//repo343/mypt2/h.txt/104.txt
-
-.//repo343/mypt2/hello.txt/20.txt
-
-
-Previous Project tree: None

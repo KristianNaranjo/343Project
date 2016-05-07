@@ -1,0 +1,9 @@
+Project Tree: ..\FRED
+.\repo343\mypt2\goodbye.txt\201.txt
+
+.\repo343\mypt2\h.txt\72.txt
+
+.\repo343\mypt2\hello.txt\60.txt
+
+
+Parent Tree: None

@@ -1,0 +1,9 @@
+Project Tree: ..\FRED
+.\repo343\mypt3\h.txt\72.txt
+
+.\repo343\mypt3\src\darn.fool\107.fool
+
+.\repo343\mypt3\src\main.fool\161.fool
+
+
+Parent Tree: None

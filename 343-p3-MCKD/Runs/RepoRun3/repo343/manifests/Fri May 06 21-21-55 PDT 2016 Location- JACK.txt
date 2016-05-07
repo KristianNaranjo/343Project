@@ -1,0 +1,3 @@
+Project Tree: ..\JACK
+repo343\mypt\h.txt\72.txt
+Parent Tree: .\repo343\manifests\Fri May 06 21-21-42 PDT 2016 Location- FRED.txt

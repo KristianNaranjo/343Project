@@ -1,0 +1,8 @@
+Project Tree: ..\JACK
+repo343\mypt2\goodbye.txt\201.txt
+
+repo343\mypt2\h.txt\72.txt
+
+repo343\mypt2\hello.txt\60.txt
+
+Parent Tree: repo343\manifests\Fri May 06 21-25-38 PDT 2016 Location- JACK.txt
