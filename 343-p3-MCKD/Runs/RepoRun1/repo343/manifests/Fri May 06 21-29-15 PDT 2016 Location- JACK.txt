@@ -1,6 +1,0 @@
-Project Tree: ..\JACK
-repo343\mypt3\src\darn.fool\107.fool
-
-repo343\mypt3\src\main.fool\161.fool
-
-Parent Tree: repo343\manifests\Fri May 06 21-28-23 PDT 2016 Location- JACK.txt

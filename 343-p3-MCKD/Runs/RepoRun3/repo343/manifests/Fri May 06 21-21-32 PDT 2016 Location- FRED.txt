@@ -1,5 +1,0 @@
-Project Tree: ..\FRED
-.\repo343\mypt\h.txt\72.txt
-
-
-Parent Tree: None
